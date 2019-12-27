@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-frame {
+  display: flex;
+  flex-direction: column;
+  border: 10px #20082d solid;
+  border-radius: 35px;
+  height: 620px;
+  width: 300px;
+}
+
+.mobile-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 25px;
+  border-radius: 20px 20px 0 0;
+  padding: 5px 15px;
+  background: #42165c;
+}
+
+.calculator-header {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, #2d1042, #63223e);
+  width: 100%;
+  height: 200px;
+}
+
+.time {
+  font-weight: 700;
+}
+
+.header-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+}
+
+.header-icon {
+  margin: 0 5px;
+  width: 15px;
+  height: 15px;
+  fill: white;
+}
+
+.app-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.expression,
+.result {
+  margin-right: 20px;
+}
+
+.expression {
+  font-size: 30px;
+  text-align: right;
+  margin-top: 30px;
+}
+
+.result {
+  font-size: 50px;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.calculator-operators {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-columns: 50px;
+  flex: 1;
+  border-radius: 0 0 20px 20px;
+  background-image: linear-gradient(to bottom, #732562, #e14b61);
+}
+
+.operator {
+  outline: 0;
+  color: #fff;
+  border: 0;
+  background: none;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.operator:hover {
+  color: #f67155;
+}
